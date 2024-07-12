@@ -1,0 +1,82 @@
+.headertop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headimg img {
+    width: 100%;
+}
+
+.headertop, .headimg, .text {
+    padding: 20px;
+}
+.headertop span {
+    font-size: 40px;
+    font-weight: bold;
+}
+.text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.text h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.text p {
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+
+.modecontrols {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.togglebutton {
+    background-color: lightgray;
+    border-radius: 50px;
+    width: 90px;
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/img/sol.png");
+    background-color: rgb(255, 217, 0);
+    border-radius: 50%;
+    background-size: contain;
+    border: 2px solid rgb(255, 217, 0);
+    transition: transform .3s linear, background-color .3s linear;
+}
+
+.night {
+    transform: translate(70px);
+    background-image: url("../assets/img/luna.png");
+    background-color: rgb(57, 123, 247);
+    border: 2px solid rgb(57, 123, 247);
+}
+
+.dark {
+    background-color: black;
+    transition: all .3s ease;
+}
+
+.dark .headertop span, .dark .text h1 {
+    color: yellow;
+}
+
+
+.dark p {
+    color: white;
+}
